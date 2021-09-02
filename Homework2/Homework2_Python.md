@@ -1,6 +1,7 @@
 # Homework-2 Programming Exercises - Python
 
 Acknowledgement and reference: [Python challenge programming exercises.](https://github.com/zhiwehu/Python-programming-exercises).  
+
 20 Questions (5 score for each) are selected.
 
 ### Question 1
