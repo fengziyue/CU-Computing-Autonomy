@@ -1,6 +1,3 @@
-This reference is from:
-https://github.com/volkerp/quadtree_Astar
-
 QuadTree A*
 ===========
 
