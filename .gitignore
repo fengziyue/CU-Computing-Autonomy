@@ -1,4 +1,15 @@
-.DS_Store
 Homework3/occupancy-grid-a-star/*.pyc
 Homework3/occupancy-grid-a-star/__pycache__/
 Homework3/occupancy-grid-a-star/.idea/
+.//Homework3/occupancy-grid-a-star/.gitignore
+
+.DS_Store
+.//0thers/.DS_Store
+.//Homework3/.DS_Store
+.//Homework3/occupancy-grid-a-star/.DS_Store
+.//Homework3/occupancy-grid-a-star/examples/.DS_Store
+.//Homework4/.DS_Store
+.//Homework4/Q1/.DS_Store
+.//Homework4/Q4/.DS_Store
+.//Homework2/.DS_Store
+
