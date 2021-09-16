@@ -31,7 +31,7 @@ def _get_movements_8n():
             (1, -1, s2)]
 
 
-def a_star(start_m, goal_m, gmap, movement='8N', occupancy_cost_factor=3):
+def a_star_occupancy(start_m, goal_m, gmap, movement='8N', occupancy_cost_factor=3):
     """
     A* for 2D occupancy grid.
 
