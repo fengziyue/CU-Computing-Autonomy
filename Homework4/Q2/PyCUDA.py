@@ -35,7 +35,7 @@ THREADS_PER_BLOCK = 512
 def gpu_enhanceImage(pic):
     # convert to array
     pix = numpy.array(pic)
-    width, height = pic.size
+    width, height = pic.shape
     total = width*height
 
     # ------------------------------------------------
@@ -57,7 +57,7 @@ def gpu_enhanceImage(pic):
     histograms(hist_rgb_gpu, pix_gpu,
          numpy.int32(total),
          block=(THREADS_PER_BLOCK, 1, 1),
-         grid=((total + THREADS_PER_BLOCK - 1)/THREADS_PER_BLOCK,1))
+         grid=(int((total + THREADS_PER_BLOCK - 1)/THREADS_PER_BLOCK),1))
 
     cuda.memcpy_dtoh(hist_rgb_buffer, hist_rgb_gpu)
 
@@ -76,7 +76,7 @@ def gpu_enhanceImage(pic):
     enhance(pix_gpu, hist_rgb_gpu,
       numpy.int32(total),
       block=(THREADS_PER_BLOCK, 1, 1),
-      grid=((total + THREADS_PER_BLOCK - 1)/THREADS_PER_BLOCK, 1))
+      grid=(int((total + THREADS_PER_BLOCK - 1)/THREADS_PER_BLOCK), 1))
 
     cuda.memcpy_dtoh(pix, pix_gpu)
     # -----------------------------------------------
