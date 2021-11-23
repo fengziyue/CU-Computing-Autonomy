@@ -1,0 +1,10 @@
+Part A. Install turtlebot on ros-melodic
+Since there isn't an official support for turtlebot in melodic, please use the following link to installturtlebot manually into melodic: https://github.com/gaunthan/Turtlebot2-On-Melodic
+
+In case it shows some problems below, please install extra packages:
+1. gazebo plugin error: apt install ros-melodic-gazebo-ros-pkgs
+2. depth_image_proc-Config error: sudo apt install ros-melodic-depth-image-proc
+
+Part B. Run turtlebot
+please guarantee executable command to the python file in wander_bot/scripts/wander_bot.py
+All parameters are stored in wander_bot.launch file so you may adjust it yourself.
