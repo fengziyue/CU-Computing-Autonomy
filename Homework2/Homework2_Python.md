@@ -4,6 +4,8 @@ Acknowledgement and reference: [Python challenge programming exercises.](https:/
 
 20 Questions (5 score for each) are selected.
 
+Sample codes could be found [here](https://github.com/zhiwehu/Python-programming-exercises/blob/master/100%2B%20Python%20challenging%20programming%20exercises%20for%20Python%203.md) for your reference. Make sure not to copy them.
+
 ### Question 1
 
 Question:
